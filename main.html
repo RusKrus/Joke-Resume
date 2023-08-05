@@ -11,7 +11,7 @@
             <nav>
                 <ul>
                     <li><a href = #about>About</a></li>
-                    <li><a href = #contacts>Contact me</a></li>
+                    <li><a href = contact.html>Contact me</a></li>
                     <li><a href = #projects>Projects</a></li>
                     <li><a href = #skills>Skills</a></li>
                 </ul>
@@ -26,38 +26,79 @@
         <section id = 'about'>
             <h2>Portfolio</h2>
             <p>My name is Rustam, I started to learn programming in the end of the winter 2023 and every day I'm studying it - programming becomes more and more interesting to me. My first programming language was Python, but as soon as I realized that Python is not needed in my country as much as I expected, I started to learn another and interesting for me part of programming  - it was web development. I learned HTML, than I spent a lot of time to understand and learn CSS and now I almost finished to learn JS. This is my first website I'm using skills of those three technologies, and I hope it will show my level as front-end developer</p>
-            <img src = "" alt = "Me">
+            <img src = "res/me.jpg" alt = "Me">
         </section>
         <section id = 'projects'>
             <h2>Projects</h2>
-            <div id = "first project">
-                <span>My favourite project - web page for club of meat&bear lovers!</span>
-                <div >
+            <details id = "first project">
+                <summary>My favourite project - web page for club of meat&bear lovers!</summary>
                     <figure>
                         <img src = "Res/MeatSite1.png" alt = "First example from meat website">
                         <img src = "Res/MeatSite2.png" alt = "Second example from meat website">
                         <figcaption>How does this website look like</figcaption>
                     </figure>
-                </div>
                 <P>This website is made for imagine club of people who love meat and bear and funny companies. I used HTML and CSS here, and a lot of my imagination to make this website such attractive</P>
-            </div>
-            <div id = "second project">
-                <span>My another project where I was studying responsive design - website for photographers, "Fotomatic"</span>
+            </details>
+            <details id = "second project">
+                <summary>My another project where I was studying responsive design - website for photographers, "Fotomatic"</summary>
                 <figure>
                     <img src = "res/Fotomatic1.png" alt = "Fotomatic website on a big screens">
                     <img src = "res/Fotomatic2.png" alt = "Fotomatic website on a small screens">
                     <figcaption>Photos of Fotomatic website on two different screens</figcaption>
                 </figure>
                 <p>It took a lot of time for me to ensure that website is accesible for all common types of screen. I was using CSS only to repair broken design of the website, and I brave that I did it almost as good as it was in solution code</p>
-            </div> 
-            <div id = "third project">
-                <span>The third one in this collection is one of my first but one of the coolest viewed website - "Fozzy tea" </span>
+            </details> 
+            <details id = "third project">
+                <summary>The third one in this collection is one of my first but one of the coolest viewed website - "Fozzy tea" </summary>
                 <figure>
-                    <img scr = 
+                    <img src = "Res/Fozzy1.png" alt = "Cozzy website first photo">
+                    <img src = "Res/Fozzy2.png" alt = "Cozzy website second photo">
+                    <figcaption>Two photos of Cozzy's tea website</figcaption>
                 </figure>
-            </div>
+                <p>This is one of my first website, but also this is the beauties one. I was using css flex containers here</p>
+            </details>
         </section>
-        
+        <section id = "skills">
+            <h2>Skills</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>JS</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Node.js</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Git</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>GitHub</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Command line</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
     
 </body>
