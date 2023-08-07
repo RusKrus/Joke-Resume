@@ -1,0 +1,134 @@
+html{
+  
+}
+
+body{
+    margin:0;
+    padding:0 15%;
+    font-size: 1.3rem;
+    background-color: rgba(238, 225, 225, 0.575);
+}
+
+/* header */
+
+header {
+    display: flex;
+    align-items: stretch;
+   
+    border-bottom: 2px solid black;
+    align-content: center;
+}
+
+header a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+header li{
+    list-style: none;
+    
+}
+
+header ul{
+    margin:auto;
+    padding: 0;
+    display: grid;
+    grid-template: 50% 50%/ 30% 50%;
+    height:100%;
+    align-items: center;
+}
+
+.intro h1, p{
+    margin: 0;
+}
+
+.navigation{
+    display: block;
+    width:50%;
+}
+
+.navigation nav{
+    height:100%;
+}
+
+.intro{
+    display: flex;
+    width:50%;
+    text-align: right;
+    flex-direction:column;
+    align-content: space-around;
+
+}
+
+
+/*portfolio*/
+
+#about{
+    display: flex;
+    margin: 1.5rem 0; 
+}
+
+#about h2{
+    
+    margin-top: 0;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#about img{
+    display: block;
+    height: auto;
+    width: 20%;
+    
+    
+}
+
+.info p{
+    margin-right: 1rem;
+}
+
+
+/*projects*/
+#projects figure{
+    display: flex;
+    width:100%;
+    flex-wrap:wrap;
+    margin: 0;
+    padding: 0;
+    justify-content: center; 
+    
+}
+
+#projects img{
+    width:80%;
+    height: auto;
+    margin: 1.2rem;
+    padding-right: 20%;
+}
+
+#projects figcaption{
+    width:80%;
+    padding-right:20%;
+    text-align:center;
+}
+
+#projects p{
+    margin: 1.5rem 0;
+}
+
+#projects summary{
+    background-color: rgb(202, 199, 199);
+    margin: 0.5rem 0;
+    border: 1px solid black;
+    border-radius:5px;
+    padding:0.1rem;
+}
+
+
+
+
