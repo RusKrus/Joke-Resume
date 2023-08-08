@@ -1,13 +1,29 @@
-html{
-  
-}
-
 body{
     margin:0;
     padding:0 15%;
     font-size: 1.3rem;
-    background-color: rgba(238, 225, 225, 0.575);
+    background-color: rgba(253, 255, 247, 0.842);
 }
+
+
+
+@media only screen and (max-width: 860px) 
+{
+    body{
+        padding:0 5%;
+        
+    }
+}
+
+@media only screen and (max-width: 530px)
+{
+    body{
+        font-size: 1.2rem;
+    }
+
+    
+}
+
 
 /* header */
 
@@ -57,16 +73,54 @@ header ul{
     width:50%;
     text-align: right;
     flex-direction:column;
-    align-content: space-around;
+    justify-content: space-around;
 
+}
+
+@media only screen and (max-width: 530px){
+    header ul{
+        display: flex;
+        justify-content:space-around;
+        
+        
+    }
+
+    header li{
+        margin:0.2rem 0;
+    }
+
+    header a{
+        font-size: 1.2rem;
+    }
+
+    header h1{
+        font-size:2rem;
+    }
+
+    .intro{
+        width:100%;
+        text-align: center;
+        border-bottom: 4px solid gray;
+        padding: 0.5rem;
+    }
+
+    header{
+        flex-direction:column-reverse;
+        border: 0;
+    }
+
+    .navigation{
+        width:100%;
+    }
 }
 
 
 /*portfolio*/
 
 #about{
-    display: flex;
+ 
     margin: 1.5rem 0; 
+    overflow:hidden;
 }
 
 #about h2{
@@ -74,23 +128,41 @@ header ul{
     margin-top: 0;
 }
 
-.info{
-    display: flex;
-    flex-direction: column;
-
-}
-
 #about img{
-    display: block;
+    
     height: auto;
     width: 20%;
+    float:right;
+    margin-left: 1rem;
+    margin: 0 0 0.5rem 0.5rem;
     
     
 }
 
-.info p{
+#about p{
+    
     margin-right: 1rem;
+    text-align:justify;
+   
 }
+
+@media only screen and (max-width: 860px) {
+    #about img{
+        width:30%;
+    }
+}
+
+@media only screen and (max-width: 530px){
+    #about img{
+        width:40%;
+    }
+
+    }
+
+
+
+
+
 
 
 /*projects*/
@@ -131,4 +203,29 @@ header ul{
 
 
 
+/*skills*/
+
+td img{
+    width:20%;
+    height: auto;
+}
+
+td{
+    text-align:center;
+    border: 1px solid black;
+}
+
+table{
+    width:50%;
+    margin: 1.5rem auto;
+}
+
+
+/*footer*/
+
+footer{
+    margin-top:3rem;
+    text-align:center;
+    
+}
 
