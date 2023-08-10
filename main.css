@@ -2,8 +2,8 @@ body{
     margin:0;
     padding:0 20%;
     font-size: 1.3rem;
-    background-color: rgb(18, 18, 20);
-    color: white;
+    background-color: rgb(254, 255, 237);
+    color: black;
     font-family: 'Nunito', sans-serif;
     padding-top:1rem;
 }
@@ -23,6 +23,7 @@ body{
     width:100%;
     height:100%;
     border-radius:20px;
+    cursor: pointer;
 }
 
 .switch input{
@@ -52,7 +53,18 @@ body{
     transform: translateX(20px);
   }
 
+  .dark{
+    display:flex;
+    align-items: center;
+    margin: 1rem 0;
+    justify-content: flex-end;
+    flex-flow:row reverse;
+  }
 
+  .description{
+    margin: 0 1rem;
+    font-size:1rem;
+  }
 
  
 
@@ -64,7 +76,7 @@ body{
     }
 }
 
-@media only screen and (max-width: 530px)
+@media only screen and (max-width: 700px)
 {
     body{
         font-size: 1.2rem;
@@ -79,14 +91,14 @@ body{
 header {
     display: flex;
     align-items: stretch;
-    border:4px solid white;
+    border:4px solid black;
     align-content: center;
     padding:1rem;
     font-family: 'Roboto Slab', serif;
 }
 
 header a{
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 1.4rem;
 }
@@ -134,7 +146,7 @@ header ul{
 
 }
 
-@media only screen and (max-width: 530px){
+@media only screen and (max-width: 700px){
     header ul{
         display: flex;
         justify-content:space-around;
@@ -173,6 +185,12 @@ header ul{
     }
 }
 
+@media only screen and (max-width: 800px){
+    header ul{
+        grid-template: 50% 50%/ 40% 50%;
+    }
+}
+
 
 /*portfolio*/
 
@@ -180,6 +198,7 @@ header ul{
  
     margin: 1.5rem 0; 
     overflow:hidden;
+    text-align:justify;
 }
 
 #about h2{
@@ -187,13 +206,19 @@ header ul{
     margin-top: 0;
 }
 
+#about figure{
+    display: inline-block;
+    width:30%;
+    margin: 0 0 0.5rem 2rem;
+    float:right
+}
+
 #about img{
     
     height: auto;
-    width: 20%;
-    float:right;
-    margin-left: 1rem;
-    margin: 0 0 0.5rem 0.5rem;
+    width: 100%;
+
+
 }
 
 #about img:hover{
@@ -203,22 +228,26 @@ header ul{
 #about p{
     
     margin-right: 1rem;
-    text-align:justify;
+    
    
 }
 
+#about figure{
+    text-align:center;
+}
+
 @media only screen and (max-width: 860px) {
-    #about img{
+    #about figure{
         width:30%;
     }
 }
 
-@media only screen and (max-width: 530px){
-    #about img{
-        width:40%;
+@media only screen and (max-width: 700px){
+    #about figure{
+        width:30%;
     }
 
-    }
+}
 
 
 
@@ -277,7 +306,7 @@ td img{
 
 td{
     text-align:center;
-    border: 1px solid white;
+    border: 1px solid black;
 }
 
 table{
@@ -290,7 +319,7 @@ table{
 }
 
 
-@media only screen and (max-width: 530px){
+@media only screen and (max-width: 700px){
     table{
         width:100%;
     }
