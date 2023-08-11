@@ -2,12 +2,71 @@ body{
     margin:0;
     padding:0 20%;
     font-size: 1.3rem;
-    background-color: rgb(18, 18, 20);
-    color: white;
+    background-color: rgb(254, 255, 237);
+    color: black;
     font-family: 'Nunito', sans-serif;
+    padding-top:1rem;
+}
+
+.switch{
+    display: inline-block;
+    right: 10%;
+    width: 40px;
+    height: 20px;
+    background-color:#ccc;
+    border-radius: 20px;    
 }
 
 
+.slider{
+    display: inline-block;
+    width:100%;
+    height:100%;
+    border-radius:20px;
+    cursor: pointer;
+}
+
+.switch input{
+    display: none;
+}  
+
+
+
+  .slider::after {
+    content: "";
+    display:inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    left: 2px;
+    bottom: 3px;
+    transition: transform 0.3s;
+    position:relative;
+  }
+
+  input:checked + .slider {
+    background-color: #007bff; /* Цвет включенного состояния */
+  }
+
+  input:checked + .slider::after {
+    transform: translateX(20px);
+  }
+
+  .dark{
+    display:flex;
+    align-items: center;
+    margin: 1rem 0;
+    justify-content: flex-end;
+    flex-flow:row reverse;
+  }
+
+  .description{
+    margin: 0 1rem;
+    font-size:1rem;
+  }
+
+ 
 
 @media only screen and (max-width: 860px) 
 {
@@ -17,7 +76,7 @@ body{
     }
 }
 
-@media only screen and (max-width: 530px)
+@media only screen and (max-width: 700px)
 {
     body{
         font-size: 1.2rem;
@@ -32,14 +91,14 @@ body{
 header {
     display: flex;
     align-items: stretch;
-    border:4px solid white;
+    border:4px solid black;
     align-content: center;
     padding:1rem;
     font-family: 'Roboto Slab', serif;
 }
 
 header a{
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 1.4rem;
 }
@@ -87,7 +146,7 @@ header ul{
 
 }
 
-@media only screen and (max-width: 530px){
+@media only screen and (max-width: 700px){
     header ul{
         display: flex;
         justify-content:space-around;
@@ -126,14 +185,21 @@ header ul{
     }
 }
 
+@media only screen and (max-width: 800px){
+    header ul{
+        grid-template: 50% 50%/ 40% 50%;
+    }
+}
 
+
+/*contacts*/
 main ul{
     display: flex;
     justify-content:space-around;
     list-style: none;
     margin:1rem 0;
     padding:0;
-    border: 4px dotted white;
+    border: 4px dotted black;
 }
 
 main ul li{
@@ -141,7 +207,7 @@ main ul li{
 }
 
 main ul li a{
-    color:white;
+    color:black;
     text-decoration: none;
     font-style:italic;
 }

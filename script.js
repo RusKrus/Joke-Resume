@@ -18,6 +18,11 @@ const changeTheme = event =>
         for (td of tableTds){
             td.style.borderColor = "white";
         }
+        for (a of document.querySelectorAll('main ul li a'))
+        {
+            a.style.color = "white";
+        }
+        document.querySelector("main ul").style.borderColor = 'white';
     }
     else
     {
@@ -29,9 +34,13 @@ const changeTheme = event =>
         }
         header.style.borderColor = "black"
         for (td of tableTds){
-            td.style.borderColor = "black";
-
+            td.style.borderColor = "black"
     }
+        for (a of document.querySelectorAll('main ul li a'))
+        {
+            a.style.color = "black";
+        }
+        document.querySelector("main ul").style.borderColor = 'black';
 }
 }
 
